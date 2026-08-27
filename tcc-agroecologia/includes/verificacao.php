@@ -7,7 +7,7 @@ if (session_status() === PHP_SESSION_NONE) {
 
 if (!isset($_SESSION["usuario_id"])) {
 
-    header("Location: /tcc%20vitor/tcc-agroecologia/login.php");
+    header("Location: /login.php");
     exit;
 }
 
