@@ -393,3 +393,29 @@ body {
     }
 
 }
+/* =========================================================
+   RODAPÉ
+   ========================================================= */
+
+.rodape-site {
+    margin-top: auto;
+    padding: 24px 20px;
+
+    background-color: #3f2a1d;
+    color: #f3ede7;
+
+    border-top: 4px solid #2f6b3b;
+
+    text-align: center;
+}
+
+.rodape-site p {
+    margin: 4px 0;
+
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.rodape-site strong {
+    color: #ffffff;
+}
