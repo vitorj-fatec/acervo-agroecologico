@@ -2,7 +2,7 @@
 
     <div class="logo">
 
-        <a href="/tcc%20vitor/tcc-agroecologia/pages/dashboard.php">
+        <a href="/pages/dashboard.php">
             Acervo Agroecológico
         </a>
 
@@ -11,19 +11,19 @@
 
     <nav class="menu-principal">
 
-        <a href="/tcc%20vitor/tcc-agroecologia/pages/dashboard.php">
+        <a href="/pages/dashboard.php">
             Início
         </a>
 
-        <a href="/tcc%20vitor/tcc-agroecologia/pages/pesquisas.php">
+        <a href="/pages/pesquisas.php">
             Pesquisas
         </a>
 
-        <a href="/tcc%20vitor/tcc-agroecologia/pages/autores.php">
+        <a href="/pages/autores.php">
             Autores
         </a>
 
-        <a href="/tcc%20vitor/tcc-agroecologia/pages/regiao.php">
+        <a href="/pages/regiao.php">
             Região
         </a>
 
@@ -32,7 +32,7 @@
 
             <a
                 class="usuario-logado"
-                href="/tcc%20vitor/tcc-agroecologia/pages/perfil.php"
+                href="/pages/perfil.php"
             >
 
                 <?php
@@ -46,7 +46,7 @@
 
             <a
                 class="link-sair"
-                href="/tcc%20vitor/tcc-agroecologia/logout.php"
+                href="/logout.php"
             >
                 Sair
             </a>
