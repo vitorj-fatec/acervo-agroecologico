@@ -19,25 +19,25 @@ $tipoUsuario = $_SESSION["usuario_tipo"];
             </span>
 
             <a
-                href="/tcc%20vitor/tcc-agroecologia/pesquisador/dashboard.php"
+                href="/pesquisador/dashboard.php"
             >
                 Painel
             </a>
 
             <a
-                href="/tcc%20vitor/tcc-agroecologia/pesquisador/enviarPesquisa.php"
+                href="/pesquisador/enviarPesquisa.php"
             >
                 Enviar pesquisa
             </a>
 
             <a
-                href="/tcc%20vitor/tcc-agroecologia/pesquisador/status.php"
+                href="/pesquisador/status.php"
             >
                 Minhas submissões
             </a>
 
             <a
-                href="/tcc%20vitor/tcc-agroecologia/pesquisador/perfilPublico.php"
+                href="/pesquisador/perfilPublico.php"
             >
                 Perfil público
             </a>
@@ -58,31 +58,31 @@ $tipoUsuario = $_SESSION["usuario_tipo"];
             </span>
 
             <a
-                href="/tcc%20vitor/tcc-agroecologia/admin/dashboard.php"
+                href="/admin/dashboard.php"
             >
                 Painel
             </a>
 
             <a
-                href="/tcc%20vitor/tcc-agroecologia/admin/pesquisas.php"
+                href="/admin/pesquisas.php"
             >
                 Pesquisas
             </a>
 
             <a
-                href="/tcc%20vitor/tcc-agroecologia/admin/usuarios.php"
+                href="/admin/usuarios.php"
             >
                 Usuários
             </a>
 
             <a
-                href="/tcc%20vitor/tcc-agroecologia/admin/autores.php"
+                href="/admin/autores.php"
             >
                 Autores
             </a>
 
             <a
-    href="/tcc%20vitor/tcc-agroecologia/admin/avaliacoesSite.php"
+    href="/admin/avaliacoesSite.php"
 >
     Avaliações
 </a>
