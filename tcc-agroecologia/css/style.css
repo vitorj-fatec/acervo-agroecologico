@@ -1,0 +1,395 @@
+/* =========================================================
+   CONFIGURAÇÕES GERAIS
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #222222;
+}
+
+
+/* =========================================================
+   CABEÇALHO PRINCIPAL
+   Mantém o tamanho original da barra.
+   ========================================================= */
+
+.cabecalho {
+    width: 100%;
+    padding: 20px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 30px;
+
+    background-color: #2f6b3b;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.logo {
+    flex-shrink: 0;
+}
+
+.logo a {
+    display: inline-block;
+
+    color: #ffffff;
+
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.2;
+
+    text-decoration: none;
+
+    transition: opacity 0.2s ease;
+}
+
+.logo a:hover {
+    opacity: 0.88;
+}
+
+
+/* =========================================================
+   MENU PRINCIPAL
+   ========================================================= */
+
+.menu-principal {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.menu-principal a {
+    position: relative;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 38px;
+    padding: 8px 10px;
+
+    color: #ffffff;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+    line-height: 1;
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.menu-principal a:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+
+/* Pequeno destaque inferior nos links principais */
+
+.menu-principal a::after {
+    content: "";
+
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 4px;
+
+    height: 2px;
+
+    background-color: rgba(255, 255, 255, 0.9);
+
+    transform: scaleX(0);
+    transform-origin: center;
+
+    transition: transform 0.2s ease;
+}
+
+.menu-principal a:hover::after {
+    transform: scaleX(1);
+}
+
+
+/* =========================================================
+   USUÁRIO LOGADO
+   ========================================================= */
+
+.menu-principal .usuario-logado {
+    margin-left: 10px;
+    padding-left: 20px;
+
+    color: #ffffff;
+    font-weight: bold;
+
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 0 6px 6px 0;
+}
+
+.menu-principal .usuario-logado::after {
+    left: 20px;
+}
+
+
+/* =========================================================
+   SAIR
+   ========================================================= */
+
+.menu-principal .link-sair {
+    color: #ffffff;
+
+    border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.menu-principal .link-sair:hover {
+    background-color: rgba(255, 255, 255, 0.18);
+}
+
+.menu-principal .link-sair::after {
+    display: none;
+}
+
+
+/* =========================================================
+   MENU CONTEXTUAL DE PERFIL
+   ========================================================= */
+
+.menu-perfil {
+    width: 100%;
+
+    background-color: #f2eee7;
+
+    border-bottom: 1px solid #d8d0c5;
+
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.035);
+}
+
+.menu-perfil-conteudo {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+    padding: 11px 40px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.titulo-menu-perfil {
+    flex-shrink: 0;
+
+    margin-right: 10px;
+    padding-right: 22px;
+
+    border-right: 1px solid #c7b9a8;
+
+    color: #6b4423;
+
+    font-weight: bold;
+}
+
+.menu-perfil a {
+    display: inline-flex;
+    align-items: center;
+
+    min-height: 34px;
+    padding: 7px 11px;
+
+    color: #5b4635;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.menu-perfil a:hover {
+    background-color: rgba(107, 68, 35, 0.09);
+    color: #2f6b3b;
+}
+
+
+/* =========================================================
+   ÁREA ADMINISTRATIVA
+   ========================================================= */
+
+.menu-administrador {
+    background-color: #eee8df;
+}
+
+
+/* =========================================================
+   ÁREA DO PESQUISADOR
+   ========================================================= */
+
+.menu-pesquisador {
+    background-color: #f4f1eb;
+}
+
+
+/* =========================================================
+   ACESSIBILIDADE DE FOCO
+   ========================================================= */
+
+.logo a:focus-visible,
+.menu-principal a:focus-visible,
+.menu-perfil a:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 3px;
+}
+
+.menu-perfil a:focus-visible {
+    outline-color: #6b4423;
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE - TABLETS / TELAS MENORES
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .cabecalho {
+        padding: 20px 25px;
+
+        gap: 20px;
+    }
+
+    .menu-principal {
+        gap: 5px;
+    }
+
+    .menu-principal a {
+        padding-left: 8px;
+        padding-right: 8px;
+
+        font-size: 15px;
+    }
+
+    .menu-principal .usuario-logado {
+        margin-left: 5px;
+        padding-left: 15px;
+    }
+
+    .menu-perfil-conteudo {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE - MENU QUEBRA EM DUAS LINHAS
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .cabecalho {
+        padding: 20px;
+
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .menu-principal {
+        width: 100%;
+
+        flex-wrap: wrap;
+
+        gap: 7px;
+    }
+
+    .menu-principal .usuario-logado {
+        margin-left: 0;
+        padding-left: 10px;
+
+        border-left: none;
+    }
+
+    .menu-principal .usuario-logado::after {
+        left: 10px;
+    }
+
+    .menu-perfil-conteudo {
+        padding: 12px 20px;
+
+        flex-wrap: wrap;
+
+        gap: 8px;
+    }
+
+    .titulo-menu-perfil {
+        width: 100%;
+
+        margin-right: 0;
+        padding-right: 0;
+        padding-bottom: 8px;
+
+        border-right: none;
+        border-bottom: 1px solid #d8d0c5;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE - CELULARES
+   ========================================================= */
+
+@media (max-width: 520px) {
+
+    .cabecalho {
+        padding: 18px 15px;
+    }
+
+    .logo a {
+        font-size: 22px;
+    }
+
+    .menu-principal a {
+        min-height: 36px;
+
+        padding: 7px 8px;
+
+        font-size: 14px;
+    }
+
+    .menu-perfil-conteudo {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .menu-perfil a {
+        font-size: 14px;
+    }
+
+}

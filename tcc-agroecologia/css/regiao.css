@@ -1,0 +1,200 @@
+.pagina-regioes {
+    min-height: calc(100vh - 80px);
+
+    padding: 60px 30px;
+
+    background-color: #f5f3ef;
+}
+
+
+.conteudo-regioes {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+
+.cabecalho-regioes {
+    margin-bottom: 35px;
+}
+
+
+.cabecalho-regioes h1 {
+    margin-bottom: 8px;
+
+    color: #6b4423;
+
+    font-size: 38px;
+    line-height: 1.15;
+}
+
+
+.cabecalho-regioes p {
+    max-width: 760px;
+
+    font-size: 18px;
+    line-height: 1.6;
+
+    color: #2f2f2f;
+}
+
+
+.cards-regioes {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 25px;
+}
+
+
+.card-regiao {
+    position: relative;
+
+    display: block;
+
+    overflow: hidden;
+
+    background-color: #ffffff;
+
+    border: 1px solid #ddd8d1;
+    border-radius: 12px;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 2px 8px
+        rgba(64, 44, 24, 0.04);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.card-regiao:hover {
+    transform: translateY(-4px);
+
+    border-color: #cdbba8;
+
+    box-shadow:
+        0 10px 24px
+        rgba(64, 44, 24, 0.11);
+}
+
+
+.imagem-regiao {
+    width: 100%;
+    height: 200px;
+
+    background-color: #f7f3ec;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    border-bottom: 1px solid #ebe5dd;
+}
+
+
+.imagem-regiao img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    padding: 10px;
+
+    box-sizing: border-box;
+
+    transition:
+        transform 0.25s ease;
+}
+
+
+.card-regiao:hover .imagem-regiao img {
+    transform: scale(1.025);
+}
+
+
+.nome-regiao {
+    padding: 20px;
+
+    text-align: center;
+
+    background-color: #ffffff;
+}
+
+
+.nome-regiao h2 {
+    margin: 0;
+
+    color: #6b4423;
+
+    font-size: 24px;
+    line-height: 1.2;
+
+    transition:
+        color 0.2s ease;
+}
+
+
+.card-regiao:hover .nome-regiao h2 {
+    color: #2f6b3b;
+}
+
+
+.card-regiao:focus-visible {
+    outline: 3px solid rgba(47, 107, 59, 0.24);
+    outline-offset: 3px;
+}
+
+
+@media (max-width: 900px) {
+
+    .pagina-regioes {
+        padding: 50px 24px;
+    }
+
+    .cards-regioes {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .pagina-regioes {
+        padding: 40px 18px;
+    }
+
+    .cabecalho-regioes {
+        margin-bottom: 28px;
+    }
+
+    .cabecalho-regioes h1 {
+        font-size: 32px;
+    }
+
+    .cabecalho-regioes p {
+        font-size: 16px;
+    }
+
+    .cards-regioes {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .imagem-regiao {
+        height: 190px;
+    }
+
+}

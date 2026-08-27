@@ -1,0 +1,387 @@
+.pagina-perfil-publico {
+    min-height: calc(100vh - 80px);
+
+    padding: 60px 30px;
+
+    background-color: #f5f3ef;
+}
+
+
+.conteudo-perfil-publico {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+
+.cabecalho-perfil-publico {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    margin-bottom: 32px;
+}
+
+
+.cabecalho-perfil-publico h1 {
+    margin-bottom: 7px;
+
+    color: #6b4423;
+
+    font-size: 38px;
+    line-height: 1.15;
+}
+
+
+.cabecalho-perfil-publico p {
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+
+.botao-voltar-perfil-publico {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 42px;
+
+    padding: 0 18px;
+
+    background-color: #eeeeee;
+    color: #222222;
+
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+
+    font-weight: bold;
+    text-decoration: none;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.botao-voltar-perfil-publico:hover {
+    background-color: #e5e5e5;
+    border-color: #d3d3d3;
+}
+
+
+.perfil-publico-grid {
+    display: grid;
+
+    grid-template-columns:
+        320px minmax(0, 1fr);
+
+    gap: 30px;
+
+    align-items: start;
+}
+
+
+.visualizacao-perfil-publico,
+.formulario-perfil-publico {
+    padding: 30px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+
+    box-shadow: 0 5px 16px rgba(70, 48, 31, 0.07);
+}
+
+
+.visualizacao-perfil-publico {
+    text-align: center;
+
+    transition:
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.visualizacao-perfil-publico:hover {
+    border-color: #d6cec5;
+    box-shadow: 0 7px 20px rgba(70, 48, 31, 0.10);
+}
+
+
+.foto-perfil-publico {
+    width: 100%;
+    height: 340px;
+
+    display: block;
+
+    margin-bottom: 22px;
+
+    border-radius: 9px;
+
+    object-fit: cover;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.10);
+}
+
+
+.sem-foto-perfil-publico {
+    width: 100%;
+    height: 340px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 22px;
+
+    border-radius: 9px;
+
+    background-color: #6b4423;
+    color: #ffffff;
+
+    font-size: 90px;
+    font-weight: bold;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.10);
+}
+
+
+.visualizacao-perfil-publico h2 {
+    margin-bottom: 8px;
+
+    color: #6b4423;
+
+    line-height: 1.2;
+}
+
+
+.instituicao-perfil-publico {
+    margin-bottom: 18px;
+
+    color: #4d4d4d;
+    line-height: 1.5;
+}
+
+
+.perfil-publico-status {
+    display: inline-block;
+
+    padding: 7px 13px;
+
+    background-color: #dff0df;
+    color: #256029;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.formulario-perfil-publico h2 {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+
+    color: #6b4423;
+
+    border-bottom: 1px solid #e5e0da;
+}
+
+
+.campo-perfil-publico {
+    margin-bottom: 20px;
+}
+
+
+.campo-perfil-publico label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-weight: bold;
+}
+
+
+.campo-perfil-publico input,
+.campo-perfil-publico textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 11px 12px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.campo-perfil-publico input:focus,
+.campo-perfil-publico textarea:focus {
+    border-color: #6b4423;
+    box-shadow: 0 0 0 3px rgba(107, 68, 35, 0.10);
+}
+
+
+.campo-perfil-publico textarea {
+    resize: vertical;
+
+    min-height: 130px;
+
+    line-height: 1.5;
+}
+
+
+.campo-perfil-publico input:disabled {
+    background-color: #f1efec;
+
+    color: #666666;
+
+    cursor: not-allowed;
+}
+
+
+.campo-perfil-publico small {
+    display: block;
+
+    margin-top: 6px;
+
+    color: #666666;
+
+    line-height: 1.4;
+}
+
+
+.botao-salvar-perfil-publico {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #6b4423;
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.botao-salvar-perfil-publico:hover {
+    background-color: #54351c;
+    box-shadow: 0 4px 10px rgba(84, 53, 28, 0.16);
+}
+
+
+.sem-perfil-publico {
+    padding: 35px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+
+    box-shadow: 0 5px 16px rgba(70, 48, 31, 0.07);
+}
+
+
+.sem-perfil-publico h2 {
+    margin-bottom: 15px;
+
+    color: #6b4423;
+}
+
+
+.sem-perfil-publico p {
+    margin-bottom: 10px;
+
+    line-height: 1.5;
+}
+
+
+.sem-perfil-publico .botao-voltar-perfil-publico {
+    display: inline-flex;
+
+    margin-top: 15px;
+}
+
+
+@media (max-width: 800px) {
+
+    .pagina-perfil-publico {
+        padding: 40px 20px;
+    }
+
+
+    .perfil-publico-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .visualizacao-perfil-publico {
+        width: 100%;
+        max-width: 450px;
+
+        box-sizing: border-box;
+    }
+
+
+    .cabecalho-perfil-publico {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .pagina-perfil-publico {
+        padding: 30px 15px;
+    }
+
+
+    .cabecalho-perfil-publico h1 {
+        font-size: 31px;
+    }
+
+
+    .visualizacao-perfil-publico,
+    .formulario-perfil-publico,
+    .sem-perfil-publico {
+        padding: 22px;
+    }
+
+
+    .foto-perfil-publico,
+    .sem-foto-perfil-publico {
+        height: 300px;
+    }
+
+}

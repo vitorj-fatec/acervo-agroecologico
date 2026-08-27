@@ -1,0 +1,270 @@
+.pagina-sobre {
+    min-height: calc(100vh - 80px);
+
+    padding: 60px 30px;
+
+    background-color: #f5f3ef;
+}
+
+
+.conteudo-sobre {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+
+.cabecalho-sobre {
+    margin-bottom: 35px;
+}
+
+
+.cabecalho-sobre h1 {
+    margin-bottom: 8px;
+
+    color: #6b4423;
+
+    font-size: 40px;
+}
+
+
+.cabecalho-sobre p {
+    font-size: 18px;
+}
+
+
+.bloco-sobre {
+    padding: 30px;
+
+    margin-bottom: 30px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
+
+
+.bloco-sobre h2 {
+    margin-bottom: 15px;
+
+    color: #6b4423;
+}
+
+
+.bloco-sobre p {
+    margin-bottom: 12px;
+
+    line-height: 1.6;
+}
+
+
+.destaque-sobre {
+    border-left: 6px solid #6b4423;
+}
+
+
+.grade-sobre {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 25px;
+}
+
+
+.grade-sobre .bloco-sobre {
+    margin-bottom: 0;
+}
+
+
+.fluxo-sobre {
+    margin-top: 30px;
+}
+
+
+.etapas-sobre {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+
+.etapa-sobre {
+    padding: 22px;
+
+    background-color: #f7f3ed;
+
+    border-radius: 8px;
+
+    text-align: center;
+}
+
+
+.etapa-sobre span {
+    width: 42px;
+    height: 42px;
+
+    margin: 0 auto 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #6b4423;
+    color: #ffffff;
+
+    font-weight: bold;
+}
+
+
+.etapa-sobre h3 {
+    margin-bottom: 10px;
+
+    color: #6b4423;
+}
+
+
+.recursos-sobre {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+
+.recursos-sobre div {
+    padding: 20px;
+
+    background-color: #f7f3ed;
+
+    border-radius: 8px;
+}
+
+
+.recursos-sobre strong {
+    color: #6b4423;
+}
+
+
+.desenvolvimento-sobre {
+    border-left: 6px solid #2f6b3b;
+}
+
+
+.acao-sobre {
+    text-align: center;
+}
+
+
+.botao-sobre {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    border-radius: 5px;
+
+    background-color: #6b4423;
+    color: #ffffff;
+
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.botao-sobre:hover {
+    background-color: #54351c;
+}
+
+
+@media (max-width: 800px) {
+
+    .grade-sobre,
+    .etapas-sobre,
+    .recursos-sobre {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =========================================================
+   REFINAMENTO VISUAL - SOBRE O PROJETO
+   ========================================================= */
+
+.cabecalho-sobre h1 {
+    letter-spacing: -0.6px;
+}
+
+.cabecalho-sobre p {
+    color: #444444;
+    line-height: 1.55;
+}
+
+.bloco-sobre,
+.etapa-sobre,
+.recursos-sobre div {
+    box-shadow: 0 4px 16px rgba(60, 40, 20, 0.045);
+}
+
+.bloco-sobre,
+.etapa-sobre,
+.recursos-sobre div {
+    transition:
+        transform 0.18s ease,
+        box-shadow 0.18s ease,
+        border-color 0.18s ease;
+}
+
+.bloco-sobre:hover,
+.etapa-sobre:hover,
+.recursos-sobre div:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(60, 40, 20, 0.075);
+}
+
+.bloco-sobre h2,
+.etapa-sobre h3,
+.recursos-sobre strong {
+    letter-spacing: -0.2px;
+}
+
+.etapa-sobre span {
+    box-shadow: 0 3px 8px rgba(80, 50, 25, 0.14);
+}
+
+.destaque-sobre,
+.desenvolvimento-sobre {
+    border-radius: 8px;
+}
+
+.botao-sobre {
+    box-shadow: 0 2px 6px rgba(80, 50, 25, 0.10);
+    transition:
+        background-color 0.18s ease,
+        transform 0.18s ease,
+        box-shadow 0.18s ease;
+}
+
+.botao-sobre:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(80, 50, 25, 0.14);
+}
+
+@media (max-width: 800px) {
+    .pagina-sobre {
+        padding: 45px 20px;
+    }
+
+    .bloco-sobre {
+        padding: 24px;
+    }
+}

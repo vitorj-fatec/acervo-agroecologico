@@ -1,0 +1,459 @@
+/* =========================================================
+   LOGIN E CADASTRO - INSPIRADO NO WIREFRAME
+   ========================================================= */
+
+.area-login {
+    min-height: calc(100vh - 80px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 48px 24px;
+
+    background-color: #f4f1ec;
+}
+
+.caixa-autenticacao {
+    width: 100%;
+    max-width: 1120px;
+    min-height: 610px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    overflow: hidden;
+
+    background-color: #f7f3ed;
+
+    border: 1px solid #e2dbd2;
+    border-radius: 16px;
+
+    box-shadow: 0 14px 38px rgba(63, 44, 27, 0.10);
+}
+
+/* =========================================================
+   PAINEL VISUAL - LADO ESQUERDO
+   ========================================================= */
+
+.painel-visual-login {
+    position: relative;
+
+    min-height: 610px;
+
+    overflow: hidden;
+
+    background-color: #b29783;
+}
+
+.painel-visual-login::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        radial-gradient(circle at 12% 14%, rgba(255,255,255,.10), transparent 22%),
+        linear-gradient(145deg, rgba(255,255,255,.03), rgba(0,0,0,.02));
+}
+
+.onda {
+    position: absolute;
+
+    width: 115%;
+    height: 300px;
+
+    border-radius: 48% 52% 60% 40% / 55% 45% 55% 45%;
+}
+
+.onda-superior {
+    top: -135px;
+    left: 70px;
+
+    background-color: #402c20;
+
+    transform: rotate(15deg);
+}
+
+.onda-inferior {
+    bottom: -135px;
+    left: -95px;
+
+    background-color: #ead8c2;
+
+    transform: rotate(18deg);
+}
+
+.circulo-planta {
+    position: absolute;
+
+    top: 50%;
+    left: 0;
+
+    width: 230px;
+    height: 230px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: translate(-27%, -50%);
+
+    border-radius: 50%;
+
+    background-color: #ffffff;
+
+    box-shadow: 0 8px 20px rgba(50, 34, 24, 0.13);
+}
+
+.icone-planta {
+    display: block;
+
+    font-size: 92px;
+
+    transform: translateX(18px);
+}
+
+.marca-login {
+    position: absolute;
+
+    left: 42px;
+    bottom: 36px;
+
+    display: flex;
+    flex-direction: column;
+
+    color: #ffffff;
+
+    text-shadow: 0 2px 8px rgba(45, 30, 18, 0.28);
+}
+
+.marca-login strong {
+    font-size: 24px;
+}
+
+.marca-login span {
+    margin-top: 2px;
+
+    font-size: 15px;
+}
+
+/* =========================================================
+   LADO DO FORMULÁRIO
+   ========================================================= */
+
+.lado-formulario-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 50px 48px;
+
+    background-color: #f7f3ed;
+}
+
+.formulario-login {
+    width: 100%;
+    max-width: 390px;
+
+    padding: 34px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #ebe5de;
+    border-radius: 13px;
+
+    box-shadow: 0 5px 18px rgba(63, 44, 27, 0.06);
+}
+
+.formulario-login h1 {
+    margin: 0 0 7px;
+
+    color: #3b2a20;
+
+    font-size: 28px;
+    text-align: center;
+}
+
+.descricao-login {
+    margin: 0 0 26px;
+
+    color: #6b625c;
+
+    font-size: 14px;
+    line-height: 1.45;
+    text-align: center;
+}
+
+/* =========================================================
+   CAMPOS
+   ========================================================= */
+
+.campo-formulario {
+    margin-bottom: 17px;
+}
+
+.campo-formulario label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #3b2a20;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.campo-formulario input,
+.campo-formulario select {
+    width: 100%;
+
+    padding: 12px 13px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #bdb5ad;
+    border-radius: 5px;
+
+    color: #222222;
+
+    font-size: 15px;
+
+    transition:
+        border-color 0.18s ease,
+        box-shadow 0.18s ease;
+}
+
+.campo-formulario input::placeholder {
+    color: #99918a;
+}
+
+.campo-formulario input:focus,
+.campo-formulario select:focus {
+    outline: none;
+
+    border-color: #8f6d56;
+
+    box-shadow: 0 0 0 3px rgba(143, 109, 86, 0.12);
+}
+
+/* =========================================================
+   BOTÃO E LINKS
+   ========================================================= */
+
+.formulario-login button {
+    width: 100%;
+
+    padding: 12px 18px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #a17e68;
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0 2px 5px rgba(73, 49, 32, 0.12);
+
+    transition:
+        background-color 0.18s ease,
+        transform 0.18s ease,
+        box-shadow 0.18s ease;
+}
+
+.formulario-login button:hover {
+    background-color: #896650;
+
+    transform: translateY(-1px);
+
+    box-shadow: 0 4px 9px rgba(73, 49, 32, 0.16);
+}
+
+.link-autenticacao {
+    margin: 15px 0 0 !important;
+
+    color: #5f5650;
+
+    font-size: 13px;
+    text-align: center;
+}
+
+.link-autenticacao a {
+    color: #6b4423;
+
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link-autenticacao a:hover {
+    text-decoration: underline;
+}
+
+/* =========================================================
+   MENSAGENS
+   ========================================================= */
+
+.mensagem-erro,
+.mensagem-sucesso {
+    margin-bottom: 18px;
+
+    padding: 11px 13px;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.mensagem-erro {
+    background-color: #f8dddd;
+    color: #8a2020;
+
+    border: 1px solid #ebc4c4;
+}
+
+.mensagem-sucesso {
+    background-color: #dff0df;
+    color: #256029;
+
+    border: 1px solid #c7e2c8;
+}
+
+/* =========================================================
+   CADASTRO
+   ========================================================= */
+
+.area-cadastro .caixa-autenticacao {
+    min-height: 690px;
+}
+
+.area-cadastro .painel-visual-login {
+    min-height: 690px;
+}
+
+.formulario-cadastro {
+    max-width: 510px;
+}
+
+.grade-cadastro {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    column-gap: 14px;
+}
+
+.campo-largo {
+    grid-column: 1 / -1;
+}
+
+.formulario-cadastro .campo-formulario {
+    margin-bottom: 14px;
+}
+
+/* =========================================================
+   RESPONSIVIDADE
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+    .caixa-autenticacao {
+        max-width: 590px;
+
+        grid-template-columns: 1fr;
+    }
+
+    .painel-visual-login {
+        min-height: 210px;
+    }
+
+    .area-cadastro .painel-visual-login {
+        min-height: 210px;
+    }
+
+    .onda-superior {
+        top: -190px;
+        left: 120px;
+    }
+
+    .onda-inferior {
+        bottom: -210px;
+        left: -80px;
+    }
+
+    .circulo-planta {
+        top: 50%;
+
+        width: 170px;
+        height: 170px;
+    }
+
+    .icone-planta {
+        font-size: 68px;
+
+        transform: translateX(15px);
+    }
+
+    .marca-login {
+        left: auto;
+        right: 25px;
+        bottom: 22px;
+    }
+
+    .lado-formulario-login {
+        padding: 35px 25px;
+    }
+}
+
+@media (max-width: 560px) {
+
+    .area-login {
+        padding: 24px 14px;
+    }
+
+    .caixa-autenticacao {
+        border-radius: 12px;
+    }
+
+    .painel-visual-login,
+    .area-cadastro .painel-visual-login {
+        min-height: 175px;
+    }
+
+    .circulo-planta {
+        width: 140px;
+        height: 140px;
+    }
+
+    .icone-planta {
+        font-size: 54px;
+    }
+
+    .marca-login {
+        right: 18px;
+        bottom: 18px;
+    }
+
+    .marca-login strong {
+        font-size: 20px;
+    }
+
+    .formulario-login {
+        padding: 26px 20px;
+    }
+
+    .formulario-login h1 {
+        font-size: 25px;
+    }
+
+    .grade-cadastro {
+        grid-template-columns: 1fr;
+    }
+
+    .campo-largo {
+        grid-column: auto;
+    }
+}

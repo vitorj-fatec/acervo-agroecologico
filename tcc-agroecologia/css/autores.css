@@ -1,0 +1,720 @@
+/* =========================
+   PÁGINA DE AUTORES
+========================= */
+
+.pagina-autores {
+    min-height: calc(100vh - 80px);
+
+    padding: 60px 30px;
+
+    background-color: #f5f3ef;
+}
+
+
+.conteudo-autores {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+
+.cabecalho-autores {
+    margin-bottom: 35px;
+}
+
+
+.cabecalho-autores h1 {
+    margin-bottom: 8px;
+
+    color: #6b4423;
+
+    font-size: 38px;
+}
+
+
+.cabecalho-autores p {
+    font-size: 18px;
+}
+
+
+/* =========================
+   CARDS DOS AUTORES
+========================= */
+
+.cards-autores {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 28px;
+}
+
+
+.card-autor {
+    overflow: hidden;
+
+    background-color: #ffffff;
+
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.card-autor:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 22px
+        rgba(0, 0, 0, 0.08);
+}
+
+
+/* Foto grande */
+
+.imagem-card-autor {
+    width: 100%;
+    height: 290px;
+
+    overflow: hidden;
+
+    background-color: #eee8df;
+}
+
+
+.imagem-card-autor img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* Fallback caso não exista foto */
+
+.autor-sem-foto-card {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #6b4423;
+    color: #ffffff;
+
+    font-size: 90px;
+    font-weight: bold;
+}
+
+
+/* Conteúdo */
+
+.conteudo-card-autor {
+    padding: 25px;
+}
+
+
+.conteudo-card-autor h2 {
+    margin-bottom: 8px;
+
+    color: #6b4423;
+
+    font-size: 27px;
+}
+
+
+.instituicao-card-autor {
+    margin-bottom: 12px;
+
+    color: #2f6b3b;
+
+    font-weight: bold;
+}
+
+
+.biografia-card-autor {
+    min-height: 80px;
+
+    margin-bottom: 18px;
+
+    line-height: 1.5;
+}
+
+
+.quantidade-card-autor {
+    margin-bottom: 20px;
+}
+
+
+.botao-acessar-autor {
+    display: inline-block;
+
+    padding: 11px 20px;
+
+    background-color: #6b4423;
+    color: #ffffff;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.botao-acessar-autor:hover {
+    background-color: #54351c;
+}
+
+
+/* =========================
+   SEM AUTORES
+========================= */
+
+.sem-autores {
+    padding: 40px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+
+/* =========================
+   PÁGINA INDIVIDUAL DO AUTOR
+========================= */
+
+.conteudo-autor-detalhes {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+
+.cabecalho-autor-detalhes {
+    display: flex;
+    justify-content: flex-end;
+
+    margin-bottom: 20px;
+}
+
+
+.perfil-autor {
+    display: grid;
+
+    grid-template-columns:
+        320px 1fr;
+
+    gap: 35px;
+
+    padding: 35px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
+
+
+/* Foto grande na página individual */
+
+.imagem-autor-detalhes {
+    width: 100%;
+}
+
+
+.imagem-autor-detalhes img {
+    width: 100%;
+    height: 360px;
+
+    display: block;
+
+    border-radius: 10px;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.autor-sem-foto-grande {
+    width: 100%;
+    height: 360px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background-color: #6b4423;
+    color: #ffffff;
+
+    font-size: 90px;
+    font-weight: bold;
+}
+
+
+.dados-autor-detalhes h1 {
+    margin-bottom: 12px;
+
+    color: #6b4423;
+
+    font-size: 38px;
+}
+
+
+.instituicao-autor-detalhes {
+    margin-bottom: 25px;
+}
+
+
+.biografia-autor-detalhes h2 {
+    margin-bottom: 8px;
+
+    color: #6b4423;
+}
+
+
+.biografia-autor-detalhes p {
+    line-height: 1.6;
+}
+
+
+/* =========================
+   PESQUISAS DO AUTOR
+========================= */
+
+.pesquisas-do-autor {
+    margin-top: 45px;
+}
+
+
+.titulo-pesquisas-autor {
+    margin-bottom: 25px;
+}
+
+
+.titulo-pesquisas-autor h2 {
+    margin-bottom: 8px;
+
+    color: #6b4423;
+
+    font-size: 30px;
+}
+
+
+.cards-pesquisas-autor {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 25px;
+}
+
+
+.card-pesquisa-autor {
+    padding: 25px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
+
+
+.card-pesquisa-autor h3 {
+    margin-bottom: 18px;
+
+    color: #6b4423;
+
+    font-size: 24px;
+}
+
+
+.dados-pesquisa-autor {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 8px 20px;
+
+    margin-bottom: 18px;
+}
+
+
+.avaliacao-autor {
+    margin-bottom: 18px;
+}
+
+
+.descricao-pesquisa-autor {
+    margin-bottom: 20px;
+
+    line-height: 1.5;
+}
+
+
+.botao-ver-pesquisa-autor {
+    display: inline-block;
+
+    padding: 10px 18px;
+
+    background-color: #6b4423;
+    color: #ffffff;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.botao-ver-pesquisa-autor:hover {
+    background-color: #54351c;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 850px) {
+
+    .cards-autores,
+    .cards-pesquisas-autor {
+        grid-template-columns: 1fr;
+    }
+
+
+    .perfil-autor {
+        grid-template-columns: 1fr;
+    }
+
+
+    .imagem-autor-detalhes {
+        max-width: 450px;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .pagina-autores {
+        padding: 40px 20px;
+    }
+
+
+    .imagem-card-autor {
+        height: 240px;
+    }
+
+
+    .dados-pesquisa-autor {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =========================================================
+   BUSCA DE AUTORES
+   ========================================================= */
+
+.area-busca-autores {
+    margin-bottom: 30px;
+
+    padding: 22px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
+
+
+.form-busca-autores label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #6b4423;
+
+    font-weight: bold;
+}
+
+
+.linha-busca-autores {
+    display: flex;
+
+    gap: 10px;
+
+    align-items: center;
+}
+
+
+.linha-busca-autores input {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 11px 13px;
+
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+
+    font-size: 16px;
+}
+
+
+.botao-buscar-autor,
+.botao-limpar-busca-autor {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 44px;
+
+    padding: 0 20px;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+
+.botao-buscar-autor {
+    border: none;
+
+    background-color: #6b4423;
+    color: #ffffff;
+}
+
+
+.botao-buscar-autor:hover {
+    background-color: #54351c;
+}
+
+
+.botao-limpar-busca-autor {
+    background-color: #eee9e2;
+    color: #6b4423;
+
+    border: 1px solid #d7cec5;
+}
+
+
+.botao-limpar-busca-autor:hover {
+    background-color: #e3dbd1;
+}
+
+
+/* =========================================================
+   PAGINAÇÃO DOS AUTORES
+   ========================================================= */
+
+.paginacao {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 40px;
+}
+
+
+.pagina-link {
+    display: inline-flex;
+
+    min-width: 40px;
+    height: 40px;
+
+    padding: 0 12px;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ffffff;
+    color: #6b4423;
+
+    border: 1px solid #d7cec5;
+    border-radius: 6px;
+
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.pagina-link:hover {
+    background-color: #eee9e2;
+}
+
+
+.pagina-atual {
+    background-color: #6b4423;
+    color: #ffffff;
+
+    border-color: #6b4423;
+
+    cursor: default;
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE DA BUSCA
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    .linha-busca-autores {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .botao-buscar-autor,
+    .botao-limpar-busca-autor {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+}
+/* =========================================================
+   REFINAMENTO VISUAL - AUTORES
+   ========================================================= */
+
+.cabecalho-autores h1,
+.dados-autor-detalhes h1,
+.titulo-pesquisas-autor h2 {
+    letter-spacing: -0.3px;
+}
+
+.area-busca-autores,
+.card-autor,
+.perfil-autor,
+.card-pesquisa-autor,
+.sem-autores {
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.035);
+}
+
+.card-autor,
+.card-pesquisa-autor,
+.botao-acessar-autor,
+.botao-ver-pesquisa-autor,
+.botao-buscar-autor,
+.botao-limpar-busca-autor,
+.pagina-link {
+    transition:
+        transform 0.18s ease,
+        box-shadow 0.18s ease,
+        background-color 0.18s ease,
+        border-color 0.18s ease,
+        color 0.18s ease;
+}
+
+.card-autor:hover,
+.card-pesquisa-autor:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+    border-color: #d6cec4;
+}
+
+.imagem-card-autor,
+.imagem-autor-detalhes img,
+.autor-sem-foto-grande {
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.025);
+}
+
+.conteudo-card-autor h2,
+.card-pesquisa-autor h3 {
+    line-height: 1.2;
+}
+
+.instituicao-card-autor,
+.quantidade-card-autor strong,
+.avaliacao-autor {
+    color: #2f6b3b;
+}
+
+.biografia-card-autor,
+.biografia-autor-detalhes p,
+.descricao-pesquisa-autor {
+    color: #343434;
+}
+
+.botao-acessar-autor,
+.botao-ver-pesquisa-autor,
+.botao-buscar-autor {
+    box-shadow: 0 2px 6px rgba(107, 68, 35, 0.12);
+}
+
+.botao-acessar-autor:hover,
+.botao-ver-pesquisa-autor:hover,
+.botao-buscar-autor:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(107, 68, 35, 0.16);
+}
+
+.linha-busca-autores input {
+    background-color: #ffffff;
+    transition:
+        border-color 0.18s ease,
+        box-shadow 0.18s ease;
+}
+
+.linha-busca-autores input:focus {
+    outline: none;
+    border-color: #6b4423;
+    box-shadow: 0 0 0 3px rgba(107, 68, 35, 0.09);
+}
+
+.area-busca-autores {
+    border-color: #d9d4ce;
+}
+
+.perfil-autor {
+    border-color: #d9d4ce;
+}
+
+.pagina-link:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.pagina-atual:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+@media (max-width: 550px) {
+
+    .conteudo-card-autor h2 {
+        font-size: 24px;
+    }
+
+    .dados-autor-detalhes h1 {
+        font-size: 32px;
+    }
+}

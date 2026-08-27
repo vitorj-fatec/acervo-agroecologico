@@ -1,0 +1,600 @@
+.pagina-autores-admin {
+    min-height: calc(100vh - 80px);
+
+    padding: 60px 30px;
+
+    background-color: #f5f3ef;
+}
+
+
+.conteudo-autores-admin {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+
+.cabecalho-autores-admin {
+    margin-bottom: 35px;
+}
+
+
+.cabecalho-autores-admin h1 {
+    margin-bottom: 8px;
+
+    color: #6b4423;
+
+    font-size: 38px;
+}
+
+
+.cabecalho-autores-admin p {
+    font-size: 18px;
+}
+
+
+.cards-autores-admin {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 25px;
+}
+
+
+.card-autor-admin {
+    display: grid;
+
+    grid-template-columns:
+        180px 1fr;
+
+    overflow: hidden;
+
+    background-color: #ffffff;
+
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
+
+
+.foto-autor-admin {
+    width: 180px;
+    height: 100%;
+
+    min-height: 240px;
+
+    overflow: hidden;
+
+    background-color: #eee8df;
+}
+
+
+.foto-autor-admin img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+.autor-sem-foto-admin {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #6b4423;
+    color: #ffffff;
+
+    font-size: 60px;
+    font-weight: bold;
+}
+
+
+.dados-autor-admin {
+    padding: 25px;
+}
+
+
+.topo-card-autor-admin {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 15px;
+
+    margin-bottom: 15px;
+}
+
+
+.topo-card-autor-admin h2 {
+    color: #6b4423;
+}
+
+
+.status-vinculo {
+    display: inline-block;
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+
+.vinculado {
+    background-color: #dff0df;
+    color: #256029;
+}
+
+
+.nao-vinculado {
+    background-color: #eee8df;
+    color: #6b4423;
+}
+
+
+.dados-autor-admin p {
+    margin-bottom: 10px;
+
+    line-height: 1.4;
+}
+
+
+.vinculo-pesquisador {
+    margin-top: 18px;
+
+    padding: 15px;
+
+    background-color: #f5f3ef;
+
+    border-left: 4px solid #2f6b3b;
+}
+
+
+.acoes-autor-admin {
+    margin-top: 20px;
+}
+
+
+.botao-editar-autor {
+    display: inline-block;
+
+    padding: 10px 18px;
+
+    background-color: #6b4423;
+    color: #ffffff;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.botao-editar-autor:hover {
+    background-color: #54351c;
+}
+
+
+.sem-autores-admin {
+    padding: 35px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 900px) {
+
+    .cards-autores-admin {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .card-autor-admin {
+        grid-template-columns: 1fr;
+    }
+
+
+    .foto-autor-admin {
+        width: 100%;
+        height: 260px;
+    }
+
+
+    .topo-card-autor-admin {
+        flex-direction: column;
+    }
+
+}
+
+/* =========================
+   EDITAR AUTOR
+========================= */
+
+.conteudo-editar-autor {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+
+.cabecalho-editar-autor {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    margin-bottom: 30px;
+}
+
+
+.cabecalho-editar-autor h1 {
+    margin-bottom: 7px;
+
+    color: #6b4423;
+
+    font-size: 38px;
+}
+
+
+.botao-voltar-autor {
+    padding: 11px 18px;
+
+    background-color: #eeeeee;
+    color: #222222;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.edicao-autor-grid {
+    display: grid;
+
+    grid-template-columns:
+        300px 1fr;
+
+    gap: 30px;
+}
+
+
+.visualizacao-autor-admin,
+.formulario-editar-autor {
+    padding: 30px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
+
+
+.visualizacao-autor-admin {
+    text-align: center;
+}
+
+
+.preview-foto-autor {
+    width: 100%;
+    height: 300px;
+
+    display: block;
+
+    margin-bottom: 20px;
+
+    border-radius: 8px;
+
+    object-fit: cover;
+}
+
+
+.preview-sem-foto-autor {
+    width: 100%;
+    height: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    background-color: #6b4423;
+    color: #ffffff;
+
+    border-radius: 8px;
+
+    font-size: 90px;
+    font-weight: bold;
+}
+
+
+.visualizacao-autor-admin h2 {
+    margin-bottom: 10px;
+
+    color: #6b4423;
+}
+
+
+.preview-instituicao {
+    margin-bottom: 18px;
+}
+
+
+.campo-autor-admin {
+    margin-bottom: 20px;
+}
+
+
+.campo-autor-admin label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-weight: bold;
+}
+
+
+.campo-autor-admin input,
+.campo-autor-admin select,
+.campo-autor-admin textarea {
+    width: 100%;
+
+    padding: 11px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+
+    font-size: 16px;
+}
+
+
+.campo-autor-admin textarea {
+    resize: vertical;
+}
+
+
+.campo-autor-admin small {
+    display: block;
+
+    margin-top: 6px;
+
+    color: #666666;
+
+    line-height: 1.4;
+}
+
+
+.aviso-vinculo-autor {
+    margin-bottom: 25px;
+
+    padding: 18px;
+
+    background-color: #f5f3ef;
+
+    border-left: 4px solid #6b4423;
+}
+
+
+.aviso-vinculo-autor p {
+    margin-top: 8px;
+    margin-bottom: 0;
+
+    line-height: 1.5;
+}
+
+
+.botao-salvar-autor {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #6b4423;
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.botao-salvar-autor:hover {
+    background-color: #54351c;
+}
+
+
+@media (max-width: 800px) {
+
+    .edicao-autor-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .visualizacao-autor-admin {
+        max-width: 450px;
+    }
+
+
+    .cabecalho-editar-autor {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+}
+
+/* =========================================================
+   PAGINAÇÃO DOS AUTORES
+   ========================================================= */
+
+.paginacao {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 40px;
+}
+
+
+.pagina-link {
+    display: inline-flex;
+
+    min-width: 40px;
+    height: 40px;
+
+    padding: 0 12px;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ffffff;
+    color: #6b4423;
+
+    border: 1px solid #d7cec5;
+    border-radius: 6px;
+
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.pagina-link:hover {
+    background-color: #eee9e2;
+}
+
+
+.pagina-atual {
+    background-color: #6b4423;
+    color: #ffffff;
+
+    border-color: #6b4423;
+
+    cursor: default;
+}
+
+/* =========================================================
+   REFINAMENTO VISUAL - ADMIN / AUTORES
+   ========================================================= */
+
+.cabecalho-autores-admin h1,
+.cabecalho-editar-autor h1 {
+    letter-spacing: -0.5px;
+}
+
+.cabecalho-autores-admin p,
+.cabecalho-editar-autor p {
+    color: #444444;
+    line-height: 1.55;
+}
+
+.card-autor-admin,
+.sem-autores-admin,
+.formulario-editar-autor {
+    box-shadow: 0 4px 16px rgba(60, 40, 20, 0.05);
+}
+
+.card-autor-admin {
+    transition:
+        transform 0.18s ease,
+        box-shadow 0.18s ease,
+        border-color 0.18s ease;
+}
+
+.card-autor-admin:hover {
+    transform: translateY(-2px);
+    border-color: #d2c7bb;
+    box-shadow: 0 8px 22px rgba(60, 40, 20, 0.08);
+}
+
+.foto-autor-admin img {
+    transition: transform 0.25s ease;
+}
+
+.card-autor-admin:hover .foto-autor-admin img {
+    transform: scale(1.015);
+}
+
+.topo-card-autor-admin h2 {
+    line-height: 1.15;
+}
+
+.status-vinculo {
+    border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.vinculo-pesquisador {
+    border-radius: 0 6px 6px 0;
+}
+
+.botao-editar-autor {
+    box-shadow: 0 2px 6px rgba(80, 50, 25, 0.10);
+    transition:
+        background-color 0.18s ease,
+        transform 0.18s ease,
+        box-shadow 0.18s ease;
+}
+
+.botao-editar-autor:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(80, 50, 25, 0.14);
+}
+
+.formulario-editar-autor input,
+.formulario-editar-autor textarea,
+.formulario-editar-autor select {
+    transition:
+        border-color 0.18s ease,
+        box-shadow 0.18s ease;
+}
+
+.formulario-editar-autor input:focus,
+.formulario-editar-autor textarea:focus,
+.formulario-editar-autor select:focus {
+    outline: none;
+    border-color: #8a633f;
+    box-shadow: 0 0 0 3px rgba(107, 68, 35, 0.10);
+}
+
+.paginacao .pagina-link {
+    transition:
+        background-color 0.18s ease,
+        border-color 0.18s ease,
+        transform 0.18s ease;
+}
+
+.paginacao a.pagina-link:hover {
+    transform: translateY(-1px);
+}

@@ -1,0 +1,764 @@
+/* =========================================================
+   DASHBOARD - ACERVO AGROECOLÓGICO
+   Usado por:
+   - Dashboard do usuário
+   - Dashboard do pesquisador
+   - Dashboard do administrador
+   ========================================================= */
+
+
+/* =========================================================
+   ÁREA PRINCIPAL
+   ========================================================= */
+
+.dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 30px;
+}
+
+
+/* =========================================================
+   APRESENTAÇÃO
+   ========================================================= */
+
+.apresentacao {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.apresentacao h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2f6b3b;
+}
+
+.apresentacao p {
+    max-width: 800px;
+    margin: 0 auto 10px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   MENSAGEM DE PERMISSÃO
+   ========================================================= */
+
+.mensagem-permissao {
+    padding: 15px;
+    margin-bottom: 25px;
+
+    background-color: #f8dddd;
+    color: #8a2020;
+
+    border-radius: 6px;
+}
+
+
+/* =========================================================
+   COMO FUNCIONA / GERENCIAMENTO
+   ========================================================= */
+
+.como-funciona {
+    margin-bottom: 60px;
+}
+
+.como-funciona h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+
+/* =========================================================
+   CARDS PRINCIPAIS
+   ========================================================= */
+
+.cards-dashboard {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 25px;
+}
+
+.card-dashboard {
+    padding: 30px;
+
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+
+    background-color: #ffffff;
+}
+
+.card-dashboard h3 {
+    color: #2f6b3b;
+
+    font-size: 22px;
+
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.card-dashboard p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.card-dashboard a {
+    color: #2f6b3b;
+
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card-dashboard a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   DASHBOARD DO USUÁRIO
+
+   Organização:
+   1ª linha:
+   - Pesquisas
+   - Autores
+   - Regiões
+
+   2ª linha:
+   - Sobre o Projeto
+   - Avaliar Plataforma
+   ========================================================= */
+
+.cards-home {
+    grid-template-columns:
+        repeat(6, minmax(0, 1fr));
+}
+
+
+/*
+   Os três primeiros cards ocupam
+   um terço da linha cada.
+*/
+
+.cards-home .card-dashboard:nth-child(1),
+.cards-home .card-dashboard:nth-child(2),
+.cards-home .card-dashboard:nth-child(3) {
+    grid-column: span 2;
+}
+
+
+/*
+   Os dois últimos cards ocupam
+   metade da linha cada.
+*/
+
+.cards-home .card-dashboard:nth-child(4),
+.cards-home .card-dashboard:nth-child(5) {
+    grid-column: span 3;
+}
+
+
+/* =========================================================
+   DASHBOARD DO PESQUISADOR
+   Agora possui:
+   - Enviar pesquisa
+   - Minhas submissões
+   - Meu perfil público
+   ========================================================= */
+
+.dashboard-pesquisador .cards-dashboard {
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+}
+
+
+/* =========================================================
+   SOBRE O PROJETO
+   ========================================================= */
+
+.sobre-projeto {
+    padding: 35px;
+    margin-top: 45px;
+
+    background-color: #f2f5f2;
+
+    border-radius: 8px;
+}
+
+.sobre-projeto h2 {
+    color: #2f6b3b;
+
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.sobre-projeto p {
+    line-height: 1.6;
+}
+
+.link-sobre-dashboard {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    color: #6b4423;
+
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link-sobre-dashboard:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   NOSSO ACERVO
+   ========================================================= */
+
+.numeros-acervo {
+    margin-top: 55px;
+}
+
+.numeros-acervo h2 {
+    margin-bottom: 8px;
+
+    color: #6b4423;
+
+    text-align: center;
+}
+
+.descricao-numeros {
+    margin-bottom: 25px;
+
+    text-align: center;
+}
+
+.cards-numeros-acervo {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 25px;
+}
+
+.card-numero-acervo {
+    padding: 25px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.numero-acervo {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #6b4423;
+
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.card-numero-acervo h3 {
+    margin: 0;
+
+    font-size: 18px;
+}
+
+
+/* =========================================================
+   DASHBOARD ADMINISTRATIVO
+   ========================================================= */
+
+.dashboard-admin {
+    max-width: 1300px;
+}
+
+
+/* =========================================================
+   VISÃO GERAL DO ADMIN
+   ========================================================= */
+
+.resumo-administrativo {
+    margin-top: 45px;
+}
+
+.resumo-administrativo h2,
+.acoes-admin h2,
+.ultimas-pendentes h2 {
+    margin-bottom: 25px;
+
+    color: #6b4423;
+}
+
+
+/*
+   Agora temos:
+   - Pendentes
+   - Aprovadas
+   - Rejeitadas
+   - Usuários
+   - Pesquisadores
+   - Autores
+
+   Por isso usamos 3 colunas:
+   3 cards em cima + 3 cards embaixo.
+*/
+
+.cards-resumo-admin {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 18px;
+}
+
+.card-resumo-admin {
+    padding: 25px 18px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.numero-resumo {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #6b4423;
+
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.card-resumo-admin h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+
+    font-size: 17px;
+}
+
+.card-resumo-admin a {
+    color: #6b4423;
+
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card-resumo-admin a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   GERENCIAMENTO DO ADMIN
+   ========================================================= */
+
+.acoes-admin {
+    margin-top: 50px;
+}
+
+
+/*
+   O administrador possui três áreas principais:
+   Pesquisas, Usuários e Autores.
+*/
+
+.dashboard-admin .acoes-admin .cards-dashboard {
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+}
+
+
+/* =========================================================
+   ÚLTIMAS PESQUISAS PENDENTES
+   ========================================================= */
+
+.ultimas-pendentes {
+    margin-top: 50px;
+}
+
+.lista-pendencias-dashboard {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.item-pendencia-dashboard {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 20px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+.item-pendencia-dashboard h3 {
+    margin-top: 0;
+    margin-bottom: 6px;
+
+    color: #6b4423;
+}
+
+.item-pendencia-dashboard p {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.botao-analisar {
+    display: inline-block;
+
+    padding: 10px 18px;
+
+    background-color: #6b4423;
+    color: #ffffff;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+    text-decoration: none;
+
+    white-space: nowrap;
+}
+
+.botao-analisar:hover {
+    background-color: #55351c;
+}
+
+
+/* =========================================================
+   SEM PENDÊNCIAS
+   ========================================================= */
+
+.sem-pendencias {
+    padding: 25px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+.sem-pendencias p {
+    margin: 0;
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE - TABLETS
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .cards-dashboard {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+
+    /*
+       Dashboard do usuário:
+       passa para duas colunas.
+    */
+
+    .cards-home {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .cards-home .card-dashboard:nth-child(1),
+    .cards-home .card-dashboard:nth-child(2),
+    .cards-home .card-dashboard:nth-child(3),
+    .cards-home .card-dashboard:nth-child(4),
+    .cards-home .card-dashboard:nth-child(5) {
+        grid-column: auto;
+    }
+
+
+    .dashboard-admin .acoes-admin .cards-dashboard {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .cards-resumo-admin {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+
+    /*
+       No tablet, os 3 cards do pesquisador
+       ficam em 2 colunas.
+    */
+
+    .dashboard-pesquisador .cards-dashboard {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE - CELULARES
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .dashboard {
+        padding: 30px 20px;
+    }
+
+    .apresentacao {
+        margin-bottom: 40px;
+    }
+
+    .apresentacao h1 {
+        font-size: 28px;
+    }
+
+    .apresentacao p {
+        font-size: 16px;
+    }
+
+    .cards-dashboard,
+    .cards-home,
+    .dashboard-admin .acoes-admin .cards-dashboard,
+    .dashboard-pesquisador .cards-dashboard,
+    .cards-numeros-acervo,
+    .cards-resumo-admin {
+        grid-template-columns: 1fr;
+    }
+
+
+    /*
+       Remove qualquer posicionamento especial
+       dos cards da página inicial.
+    */
+
+    .cards-home .card-dashboard:nth-child(1),
+    .cards-home .card-dashboard:nth-child(2),
+    .cards-home .card-dashboard:nth-child(3),
+    .cards-home .card-dashboard:nth-child(4),
+    .cards-home .card-dashboard:nth-child(5) {
+        grid-column: auto;
+    }
+
+
+    .item-pendencia-dashboard {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+
+/* =========================================================
+   TELAS MUITO PEQUENAS
+   ========================================================= */
+
+@media (max-width: 450px) {
+
+    .dashboard {
+        padding: 25px 15px;
+    }
+
+    .card-dashboard {
+        padding: 22px;
+    }
+
+    .card-resumo-admin {
+        padding: 22px 15px;
+    }
+
+    .numero-resumo,
+    .numero-acervo {
+        font-size: 32px;
+    }
+
+}
+
+/* =========================================================
+   REFINAMENTO VISUAL FINAL
+   Mantém a estrutura e dimensões existentes.
+   ========================================================= */
+
+.dashboard {
+    position: relative;
+}
+
+.apresentacao h1 {
+    letter-spacing: -0.5px;
+}
+
+.apresentacao p {
+    color: #3f3f3f;
+}
+
+.como-funciona h2,
+.numeros-acervo h2,
+.resumo-administrativo h2,
+.acoes-admin h2,
+.ultimas-pendentes h2 {
+    letter-spacing: -0.2px;
+}
+
+.card-dashboard,
+.card-numero-acervo,
+.card-resumo-admin,
+.item-pendencia-dashboard,
+.sem-pendencias {
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.card-dashboard {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    box-sizing: border-box;
+    border-color: #dedbd6;
+    box-shadow: 0 2px 8px rgba(67, 48, 31, 0.04);
+}
+
+.card-dashboard:hover {
+    transform: translateY(-3px);
+    border-color: #cfc6bb;
+    box-shadow: 0 8px 20px rgba(67, 48, 31, 0.09);
+}
+
+.card-dashboard p {
+    color: #3d3d3d;
+}
+
+.card-dashboard a {
+    display: inline-block;
+    margin-top: auto;
+    width: fit-content;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+    transition:
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.card-dashboard a:hover {
+    text-decoration: none;
+    border-bottom-color: #2f6b3b;
+}
+
+.sobre-projeto {
+    border: 1px solid #e0e5df;
+    box-shadow: 0 3px 12px rgba(47, 107, 59, 0.04);
+}
+
+.link-sobre-dashboard {
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+    transition:
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.link-sobre-dashboard:hover {
+    text-decoration: none;
+    border-bottom-color: #6b4423;
+}
+
+.card-numero-acervo {
+    border-color: #dedbd6;
+    box-shadow: 0 2px 8px rgba(67, 48, 31, 0.04);
+}
+
+.card-numero-acervo:hover {
+    transform: translateY(-2px);
+    border-color: #cfc6bb;
+    box-shadow: 0 7px 18px rgba(67, 48, 31, 0.08);
+}
+
+.numero-acervo,
+.numero-resumo {
+    line-height: 1;
+}
+
+.card-resumo-admin {
+    border-color: #dedbd6;
+    box-shadow: 0 2px 8px rgba(67, 48, 31, 0.04);
+}
+
+.card-resumo-admin:hover {
+    transform: translateY(-2px);
+    border-color: #cfc6bb;
+    box-shadow: 0 7px 18px rgba(67, 48, 31, 0.08);
+}
+
+.card-resumo-admin a {
+    display: inline-block;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.card-resumo-admin a:hover {
+    text-decoration: none;
+    border-bottom-color: #6b4423;
+}
+
+.item-pendencia-dashboard {
+    border-color: #dedbd6;
+    box-shadow: 0 2px 8px rgba(67, 48, 31, 0.035);
+}
+
+.item-pendencia-dashboard:hover {
+    border-color: #cfc6bb;
+    box-shadow: 0 6px 16px rgba(67, 48, 31, 0.07);
+}
+
+.botao-analisar {
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.botao-analisar:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(107, 68, 35, 0.18);
+}
+
+.mensagem-permissao {
+    border-left: 4px solid #8a2020;
+}
+
+@media (max-width: 700px) {
+    .card-dashboard:hover,
+    .card-numero-acervo:hover,
+    .card-resumo-admin:hover {
+        transform: none;
+    }
+}

@@ -1,0 +1,353 @@
+.pagina-perfil {
+    min-height: calc(100vh - 80px);
+
+    padding: 60px 30px;
+
+    background-color: #f5f3ef;
+}
+
+
+.conteudo-perfil {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+
+.cabecalho-perfil {
+    margin-bottom: 30px;
+}
+
+
+.cabecalho-perfil h1 {
+    margin-bottom: 8px;
+
+    color: #6b4423;
+}
+
+
+.cabecalho-perfil p {
+    line-height: 1.5;
+}
+
+
+.perfil-grid {
+    display: grid;
+
+    grid-template-columns:
+        320px 1fr;
+
+    gap: 30px;
+
+    align-items: start;
+}
+
+
+.resumo-perfil,
+.edicao-perfil {
+    padding: 30px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #ded8d1;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.045);
+}
+
+
+.resumo-perfil {
+    text-align: center;
+
+    transition:
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.resumo-perfil:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.065);
+}
+
+
+.avatar-perfil {
+    width: 130px;
+    height: 130px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #6b4423;
+    color: #ffffff;
+
+    border: 5px solid #eee8df;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+
+    font-size: 48px;
+    font-weight: bold;
+}
+
+
+.foto-perfil {
+    width: 130px;
+    height: 130px;
+
+    margin: 0 auto 18px;
+
+    display: block;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 5px solid #eee8df;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+.resumo-perfil h2 {
+    margin-bottom: 8px;
+
+    color: #6b4423;
+
+    line-height: 1.25;
+}
+
+
+.tipo-perfil {
+    display: inline-block;
+
+    margin-bottom: 25px;
+
+    padding: 7px 14px;
+
+    border-radius: 20px;
+
+    background-color: #eee8df;
+    color: #5d3a20;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.dados-resumo-perfil {
+    margin-top: 5px;
+    padding-top: 22px;
+
+    border-top: 1px solid #e7e1da;
+
+    text-align: left;
+}
+
+
+.dados-resumo-perfil p {
+    margin-bottom: 8px;
+
+    line-height: 1.45;
+
+    overflow-wrap: anywhere;
+}
+
+
+.dados-resumo-perfil p + p {
+    margin-bottom: 18px;
+}
+
+
+.dados-resumo-perfil strong {
+    color: #6b4423;
+}
+
+
+.edicao-perfil h2 {
+    margin-bottom: 25px;
+
+    padding-bottom: 15px;
+
+    color: #6b4423;
+
+    border-bottom: 1px solid #e7e1da;
+}
+
+
+.edicao-perfil .campo-formulario {
+    margin-bottom: 20px;
+}
+
+
+.edicao-perfil label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #2f2f2f;
+
+    font-weight: bold;
+}
+
+
+.edicao-perfil input {
+    width: 100%;
+
+    padding: 11px 12px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+
+    background-color: #ffffff;
+
+    font-size: 16px;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.edicao-perfil input:focus {
+    outline: none;
+
+    border-color: #6b4423;
+
+    box-shadow: 0 0 0 3px rgba(107, 68, 35, 0.10);
+}
+
+
+.edicao-perfil input:disabled {
+    background-color: #f0eeeb;
+    color: #666666;
+
+    cursor: not-allowed;
+}
+
+
+.edicao-perfil input[type="file"] {
+    padding: 8px;
+
+    background-color: #faf9f7;
+}
+
+
+.edicao-perfil input[type="file"]::file-selector-button {
+    margin-right: 12px;
+    padding: 9px 13px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #eee8df;
+    color: #5d3a20;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s ease;
+}
+
+
+.edicao-perfil input[type="file"]::file-selector-button:hover {
+    background-color: #e1d6c9;
+}
+
+
+.edicao-perfil small {
+    display: block;
+
+    margin-top: 6px;
+
+    color: #6f6f6f;
+
+    line-height: 1.4;
+}
+
+
+.botao-salvar-perfil {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #6b4423;
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.15s ease;
+}
+
+
+.botao-salvar-perfil:hover {
+    background-color: #54351c;
+
+    box-shadow: 0 4px 10px rgba(84, 53, 28, 0.18);
+}
+
+
+.botao-salvar-perfil:active {
+    transform: translateY(1px);
+}
+
+
+@media (max-width: 800px) {
+
+    .pagina-perfil {
+        padding: 40px 20px;
+    }
+
+    .perfil-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .resumo-perfil,
+    .edicao-perfil {
+        padding: 25px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .pagina-perfil {
+        padding: 30px 15px;
+    }
+
+    .resumo-perfil,
+    .edicao-perfil {
+        padding: 22px 18px;
+    }
+
+    .avatar-perfil,
+    .foto-perfil {
+        width: 115px;
+        height: 115px;
+    }
+
+    .avatar-perfil {
+        font-size: 42px;
+    }
+
+}

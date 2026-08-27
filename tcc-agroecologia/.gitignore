@@ -1,0 +1,21 @@
+# Configurações locais / produção
+includes/conexao_producao.php
+.env
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs
+.vscode/
+.idea/
+
+# Logs e temporários
+*.log
+*.tmp
+*.temp
+
+# Backups locais
+*.bak
+*.backup
