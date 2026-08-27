@@ -14,14 +14,14 @@
 
     <link
         rel="stylesheet"
-        href="/tcc%20vitor/tcc-agroecologia/css/style.css?v=1"
+        href="/css/style.css?v=1"
     >
 
     <?php if (isset($cssPagina)) : ?>
 
         <link
             rel="stylesheet"
-            href="/tcc%20vitor/tcc-agroecologia/css/<?php echo $cssPagina; ?>?v=1"
+            href="/css/<?php echo $cssPagina; ?>?v=1"
         >
 
     <?php endif; ?>
