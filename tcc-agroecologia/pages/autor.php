@@ -38,8 +38,8 @@ $sqlAutor = "
         a.instituicao,
 
         COALESCE(
-            u.foto_perfil,
-            a.foto
+            NULLIF(a.foto, ''),
+            u.foto_perfil
         ) AS foto_exibicao
 
     FROM autores a
