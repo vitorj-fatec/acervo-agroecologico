@@ -88,8 +88,6 @@ HTML5
 
 CSS3
 
-JavaScript
-
 XAMPP para desenvolvimento local
 
 InfinityFree para hospedagem
