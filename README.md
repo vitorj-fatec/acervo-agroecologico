@@ -97,16 +97,27 @@ Git e GitHub para versionamento
 🗂️ Estrutura principal do projeto
 
 tcc-agroecologia/
+
 ├── admin/
+
 ├── css/
+
 ├── images/
+
 ├── includes/
+
 ├── js/
+
 ├── pages/
+
 ├── pesquisador/
+
 ├── cadastro.php
+
 ├── index.php
+
 ├── login.php
+
 └── logout.php
 
 💾 Banco de dados
