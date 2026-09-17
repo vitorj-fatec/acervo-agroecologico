@@ -1,9 +1,9 @@
 <?php
 
 $host = "sql113.infinityfree.com";
-$usuario = "if0_42411794";
+$usuario = "";
 $senha = "";
-$banco = "if0_42411794_tcc_agro";
+$banco = "";
 
 $conn = new mysqli(
     $host,
